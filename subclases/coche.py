@@ -5,3 +5,8 @@ class Coche(Vehiculo):
         super().__init__(color, ruedas)
         self.velocidad = velocidad
         self.cilindrada = cilindrada
+
+    def catalogar(vehiculos):
+        for vehiculo in vehiculos:
+            print(f"{vehiculo.__class__.__name__} : {vehiculo}")
+        
