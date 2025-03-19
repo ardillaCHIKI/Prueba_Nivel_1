@@ -1,6 +1,7 @@
 from subclases import Vehiculo
 
 class Coche(Vehiculo):
-    def __init__(self, marca, modelo, puertas):
-        super().__init__(marca, modelo)
-        self.puertas = puertas
+    def __init__(self, color, ruedas, velocidad, cilindrada):
+        super().__init__(color, ruedas)
+        self.velocidad = velocidad
+        self.cilindrada = cilindrada
